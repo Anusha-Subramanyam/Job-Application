@@ -1,0 +1,98 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{    
+  background-color: lightgrey;  
+  padding: 50px; 
+}   
+input[type=text], textarea { 
+  width: 98%;  
+  padding: 15px; 
+  margin: 5px 0 22px 0;
+  display: inline-block;  
+  border: none;   
+}    
+ div {  
+  padding: 10px 0;  
+}  
+hr {  
+  border: 2px solid white;  
+  margin-bottom: 25px;  
+}  
+.apply {  
+  background-color: black;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.apply:hover {  
+  opacity: 2;
+  color:yellow;
+}  
+  h1{
+    text-align: center;
+  }
+</style>  
+</head>  
+  
+<body>  
+<form>  
+    <hr>
+    <h1>JOB APPLICATION FORM</h1> 
+    <hr>
+    
+    <label><b>Firstname *</b></label>   
+    <input type="text" name="firstname" placeholder= "Enter First Name" size="15" required />   
+    <label><b>Middlename</b></label>   
+    <input type="text" name="middlename" placeholder="Enter Middle Name" size="15" required />   
+    <label><b>Lastname *</b></label>    
+    <input type="text" name="lastname" placeholder="Enter Last Name" size="15"required />  
+    <label><b>Email *</b></label>  
+    <input type="text" placeholder="Enter Email" name="email" required> 
+    <label><b>Phone * </b></label>  
+    <input type="text" name="phone" placeholder="Enter phone no." size="10"/ required>
+    <div>  
+      <label><b>Gender</b></label><br>  
+      <input type="radio" value="Male" name="gender" checked > Male   
+      <input type="radio" value="Female" name="gender"> Female   
+      <input type="radio" value="Other" name="gender"> Other  
+    </div>   
+   
+    <label><b>Current Address</b></label>
+    <textarea cols="80" rows="5" placeholder="Current Address" value="address" required></textarea>
+    
+    <div>  
+      <label><b>Position you are applying for *</b></label>   
+      <select>    
+      <option value="Position">Positions available</option> 
+      <option value="Web Developer">Web Developer</option>  
+      <option value="Proguct Manager">Proguct Manager</option>  
+      <option value="Software Engineer">Software Engineer</option>  
+      <option value="Data Analyst">Data Analyst</option>  
+      <option value="Automation Engineer">Automation Engineer</option>  
+      <option value="Lab testing">Lab testing</option>  
+      </select>  
+    </div>  
+    <br>
+    
+    <label><b>Work Experience*</b></label>  
+    <input type="text" name="exp" placeholder="Work Experience in years" size="2"/ required>
+    
+    <label><b>Are you willing to relocate?</b> </label><br>  
+    <input type="radio" value="Yes" name="relocate" checked > Yes  
+    <input type="radio" value="No" name="relocate"> No   
+    <input type="radio" value="Notsure" name="relocate"> Not Sure <br><br> 
+    
+    <label><b>Upload Resume/CV *</b> </label><br> 
+    <input type="file" name="resume" required /> 
+    
+    <button type="submit" class="apply">APPLY FOR THE JOB</button>
+</form>  
+</body>  
+</html>  
